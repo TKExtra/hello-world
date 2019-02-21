@@ -35,9 +35,12 @@ class Knipperled
   };
 
 
+Knipperled Led1(2, 100, 400, 6);
+Knipperled Led2(3, 200, 100, 7);  
+  
 void setup() {}
 
 void loop() {
-  Knipperled Led1(2, 100, 400, 6);
-  Knipperled Led2(3, 200, 100, 7);  
+Led1.Update();
+Led2.Update();
 }
