@@ -1,4 +1,5 @@
-class{
+class Knipperled
+  {
   int LedPin;
   int LedState;
   long OnTime;
@@ -13,7 +14,7 @@ class{
       pinMode(pin, OUTPUT);
       pinMode(button, INPUT_PULLUP);
       OnTime = on;
-      Offtime = off;
+      OffTime = off;
       LedState = LOW;
       Lasttime = 0;
       }
@@ -34,15 +35,9 @@ class{
   };
 
 
-
-
-
-void setup() {
-  // put your setup code here, to run once:
-
-}
+void setup() {}
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
+  Knipperled Led1(2, 100, 400, 6);
+  Knipperled Led2(3, 200, 100, 7);  
 }
